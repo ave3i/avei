@@ -193,7 +193,6 @@
   </style>
 </head>
 <body>
-  <div class="grid-bg" id="gridBg"></div>
 <audio autoplay loop hidden>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
@@ -204,7 +203,7 @@
         <img src="https://cdn.xoa.me/uploads/ecfdb0c2-a7f5-46ca-aaf9-f3d56c5c9250.jpg" alt="Avatar" class="avatar">
       </div>
       <div class="username">avei</div>
-      <div class="title">CEO & Founder</div>
+      <div class="title">Developer & Founder of Glock</div>
       
       <div class="section-title">Programming Languages</div>
       <div class="languages">
@@ -278,11 +277,6 @@
       const rotateY = Math.max(-5, Math.min(5, (centerX - x) / 20));
       
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      
-      // Grid parallax
-      const gridX = (e.clientX - window.innerWidth / 2) / 50;
-      const gridY = (e.clientY - window.innerHeight / 2) / 50;
-      gridBg.style.transform = `translate(${gridX}px, ${gridY}px)`;
     });
 
     container.addEventListener('mouseleave', () => {
